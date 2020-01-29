@@ -1,0 +1,44 @@
+{
+  "name": "@cheungpat/gas-async-generator",
+  "version": "1.0.0-alpha.1",
+  "description": "Call Google Apps Script server-side functions with async/promise",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/cheungpat/gas-async-generator",
+  "author": "cheungpat",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "run": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "lint": "eslint src --ext .ts",
+    "lint-fix": "eslint src --ext .ts --fix",
+    "prepare": "yarn build"
+  },
+  "dependencies": {
+    "typescript": "^3.7.5",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.5.0",
+    "@types/yargs": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.0.0",
+    "prettier": "^1.19.1",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.6.2"
+  },
+  "bin": {
+    "gas-async-generator": "./dist/index.js"
+  },
+  "files": [
+    "./dist"
+  ]
+}
